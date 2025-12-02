@@ -35,4 +35,6 @@ jobs:
 
       # uruchomienie testów z folderu test
       - name: Run tests
-        run: pytest test
+        run: pytest test/
+        env:
+         PYTHONPATH: .
